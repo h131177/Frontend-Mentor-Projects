@@ -2,6 +2,7 @@
 .attribution {
     font-size: 11px; 
     text-align: center; 
+    margin-top: 20px;
 }
 .attribution a {
     color: hsl(228, 45%, 44%); 
@@ -11,9 +12,48 @@
 body {
     background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
+.rules {
+    color: white;
+    width: 33%;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px 5px;
+    margin: auto;
+    margin-top: 50px;
+}
 
 /* header styles */
-
+.header {
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 5px;
+    margin: 20px;
+}
+.header img {
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.score {
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+}
+.header p {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: hsl(229, 64%, 46%);
+    background: white;
+    display: inline-block;
+    margin: 0;
+    font-size: 12px;
+}
+.header p>span {
+    color: hsl(229, 25%, 31%);
+    font-size: 36px;
+}
 
 /* game styles */
-
+.playground {
+    margin:  100px 20px;
+}
