@@ -1,0 +1,19 @@
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+/* base styles */
+body {
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+/* header styles */
+
+
+/* game styles */
+
