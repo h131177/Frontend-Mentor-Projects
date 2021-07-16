@@ -25,33 +25,44 @@ body {
 
 /* header styles */
 .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     border: 3px solid hsl(217, 16%, 45%);
     border-radius: 5px;
     margin: 20px;
 }
 .header img {
-    width: 25%;
+    width: 100%;
+    grid-column: 1/2;
     margin-top: 20px;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 .score {
-    display: inline-block;
-    margin: auto;
+    grid-column: 3/4;
     background: white;
     border: 1px solid black;
     border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
 }
-.header p {
+.score p {
     color: hsl(229, 64%, 46%);
     margin: 0;
     font-size: 12px;
+    font-weight: bold;
 }
-.header span {
+.score span {
     color: hsl(229, 25%, 31%);
     font-size: 36px;
+    font-weight: bold;
 }
 
 /* game styles */
 .playground {
     margin:  100px 20px;
+}
+.triangle {
+    width: 70%;
 }
