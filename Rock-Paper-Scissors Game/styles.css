@@ -34,6 +34,7 @@ body {
     margin: 20px auto;
     max-height: 100px;
     max-width: 450px;
+    min-width: 260px;
 }
 .header img {
     width: 90px;
@@ -108,4 +109,14 @@ body {
     padding: 20px 25px;
     border: 15px solid red;
     border-radius: 60px;
+}
+
+@media screen and (min-width: 960px) {
+    .rules {
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .playground {
+        margin: 40px auto;
+    }
 }
