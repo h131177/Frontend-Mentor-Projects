@@ -22,6 +22,7 @@ body {
     padding: 8px 5px;
     margin: auto;
     margin-top: 50px;
+    max-width: 105px;
 }
 
 /* header styles */
