@@ -12,16 +12,17 @@
 body {
     background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
     margin: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 .rules {
     color: white;
     width: 33%;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 8px;
     text-align: center;
+    letter-spacing: 2px;
     padding: 8px 5px;
     margin: auto;
-    margin-top: 50px;
     max-width: 105px;
 }
 
@@ -59,10 +60,11 @@ body {
     margin: 0;
     font-size: 12px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 .score span {
     color: hsl(229, 25%, 31%);
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -87,7 +89,7 @@ body {
     height: 25%;
     background: white;
     padding: 20px 25px;
-    border: 15px solid blue;
+    border: 15px solid hsl(230, 89%, 65%);
     border-radius: 60px;
 }
 .playground img:nth-child(3) {
@@ -97,7 +99,7 @@ body {
     height: 25%;
     background: white;
     padding: 20px 25px;
-    border: 15px solid yellow;
+    border: 15px solid hsl(39, 89%, 49%);
     border-radius: 60px;
 }
 .playground img:nth-child(4) {
@@ -107,14 +109,13 @@ body {
     height: 25%;
     background: white;
     padding: 20px 25px;
-    border: 15px solid red;
+    border: 15px solid hsl(349, 71%, 52%);
     border-radius: 60px;
 }
 
 @media screen and (min-width: 960px) {
     .rules {
         margin-right: 0;
-        margin-top: 0;
     }
     .playground {
         margin: 40px auto;
