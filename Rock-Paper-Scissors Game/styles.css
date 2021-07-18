@@ -25,6 +25,9 @@ body {
     margin: auto;
     max-width: 105px;
 }
+.hidden {
+    display: none;
+}
 
 /* header styles */
 .header {
@@ -72,7 +75,7 @@ body {
 .playground {
     margin:  100px auto;
     display: grid;
-    grid-auto-rows: minmax(auto, 150px);
+    grid-auto-rows: minmax(auto, 190px);
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 360px;
 }
@@ -112,7 +115,45 @@ body {
     border: 15px solid hsl(349, 71%, 52%);
     border-radius: 60px;
 }
+.playground p {
+    color: white;
+    text-align: center;
+}
+.playground p:nth-child(5) {
+    grid-column: 1/2;
+    grid-row: 1;
+    align-self: flex-end;
+}
+.playground p:nth-child(6) {
+    grid-column: 3/4;
+    grid-row: 1;
+    align-self: flex-end;
+}
+.playground {
+    margin-bottom: 0px;
+}
 
+/* result styles */
+.result {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.result p {
+    color: white;
+    font-size: 46px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.result button {
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: hsl(229, 25%, 31%);
+    letter-spacing: 2px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    width: 200px;
+}
+
+/* media queries */
 @media screen and (min-width: 960px) {
     .rules {
         margin-right: 0;
