@@ -81,6 +81,7 @@ body {
     grid-auto-rows: minmax(auto, 190px);
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 360px;
+    margin-bottom: 0px;
 }
 .triangle {
     grid-column: 1/4;
@@ -131,9 +132,6 @@ body {
     grid-column: 3/4;
     grid-row: 1;
     align-self: flex-end;
-}
-.playground {
-    margin-bottom: 0px;
 }
 
 /* result styles */
