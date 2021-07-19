@@ -16,6 +16,8 @@ class GameController {
     }
 }
 
+import {choiceInfo} from './map.js'
+
 const controller = new GameController("root");
 
 document.addEventListener("DOMContentLoaded", controller.run);
