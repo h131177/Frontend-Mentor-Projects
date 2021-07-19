@@ -1,3 +1,4 @@
+"use strict"
 class GameController {
 
     constructor(rootID) {
@@ -14,6 +15,14 @@ class GameController {
         this.rootElement.querySelector(".playground img:nth-child(3)").addEventListener("click", this.play);
         this.rootElement.querySelector(".playground img:nth-child(4)").addEventListener("click", this.play);
     }
+
+    play() {
+        console.log("Playing");
+    }
+
+    playAgain() {
+        console.log("Play again");
+    }
 }
 
 import {choiceInfo} from './map.js'
@@ -21,3 +30,4 @@ import {choiceInfo} from './map.js'
 const controller = new GameController("root");
 
 document.addEventListener("DOMContentLoaded", controller.run);
+console.log('Hello Kje');
