@@ -79,10 +79,11 @@ body {
 .playground {
     margin:  100px auto;
     display: grid;
-    grid-auto-rows: minmax(auto, 190px);
+    /* grid-auto-rows: minmax(auto, 190px); */
+    grid-auto-rows: minmax(auto, 150px);
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 360px;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
 }
 .triangle {
     grid-column: 1/4;
@@ -199,14 +200,14 @@ body {
     }
     .playground {
         margin: 40px auto;
-        max-width: 500px;
+        /* max-width: 500px; */
     }
-    .playground img:nth-child(2) {
+    /* .playground img:nth-child(2) {
         align-self: flex-end;
     }
     .playground img:nth-child(3) {
         align-self: flex-end;
-    }
+    } */
     .playground p:nth-child(5) {
         grid-column: 1/2;
         grid-row: 1;
