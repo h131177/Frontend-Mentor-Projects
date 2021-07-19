@@ -138,6 +138,8 @@ body {
 
 /* result styles */
 .result {
+    grid-column: 1/4;
+    grid-row: 2;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -198,6 +200,7 @@ body {
     }
     .playground {
         margin: 40px auto;
+        max-width: 500px;
     }
     .playground img:nth-child(2) {
         align-self: flex-end;
@@ -214,6 +217,11 @@ body {
         grid-column: 3/4;
         grid-row: 1;
         align-self: flex-start;
+    }
+    .result {
+        grid-column: 2/3;
+        grid-row: 1;
+        margin: 30px 30px 0 30px;
     }
     #modal .modal-content {
         width: 350px;
