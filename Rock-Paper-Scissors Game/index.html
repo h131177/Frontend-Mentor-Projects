@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="styles.css">
+  <script src="gamecontroller.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,43 +14,46 @@
   <title>Rock, Paper, Scissors Game</title>
 
 </head>
+
 <body>
+  <div class="root">
+    <div class="header">
+      <img src="./images/logo.svg" alt="logo">
+      <div class="score">
+        <p>SCORE</p>
+        <span data-score>0</span>
+      </div>
+    </div>
 
-<div class="header">
-  <img src="./images/logo.svg" alt="logo">
-  <div class="score">
-    <p>SCORE</p>
-    <span data-score>0</span>
-  </div>
-</div>
+    <div class="playground">
+      <img class="triangle" src="./images/bg-triangle.svg" alt="background triangle">
+      <img src="./images/icon-paper.svg" alt="paper">
+      <img src="./images/icon-scissors.svg" alt="scissors">
+      <img src="./images/icon-rock.svg" alt="rock">
+      <p class="hidden">YOU PICKED</p>
+      <p class="hidden">THE HOUSE PICKED</p>
+      <div class="result hidden">
+        <p data-result>YOU LOSE</p>
+        <button>PLAY AGAIN</button>
+      </div>
+    </div>
 
-<div class="playground">
-  <img class="triangle" src="./images/bg-triangle.svg" alt="background triangle">
-  <img src="./images/icon-paper.svg" alt="paper">
-  <img src="./images/icon-scissors.svg" alt="scissors">
-  <img src="./images/icon-rock.svg" alt="rock">
-  <p class="hidden">YOU PICKED</p>
-  <p class="hidden">THE HOUSE PICKED</p>
-  <div class="result hidden">
-    <p data-result>YOU LOSE</p>
-    <button>PLAY AGAIN</button>
-  </div>
-</div>
+    <div class="rules">
+      <a href="#modal">RULES</a>
+    </div>
+    <div id="modal">
+      <div class="modal-content">
+        <h2>RULES</h2>
+        <img src="./images/image-rules.svg" alt="rules">
+        <a href="#" class="close-modal"><img src="./images/icon-close.svg" alt="close symbol"></a>
+      </div>
+    </div>
 
-<div class="rules">
-  <a href="#modal">RULES</a>
-</div>
-<div id="modal">
-  <div class="modal-content">
-    <h2>RULES</h2>
-    <img src="./images/image-rules.svg" alt="rules">
-    <a href="#" class="close-modal"><img src="./images/icon-close.svg" alt="close symbol"></a>
-  </div>
-</div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/h131177">Kjetil Stokke</a>.
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/h131177">Kjetil Stokke</a>.
+    </div>
   </div>
 </body>
+
 </html>
