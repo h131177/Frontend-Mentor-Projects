@@ -179,16 +179,13 @@ body {
 }
 
 #modal .modal-content * {
-    margin: 50px auto;
+    margin: 110px auto;
+    display: block;
 }
 #modal .modal-content h2 {
-    font-weight: bold;
-    font-size: 30px;
-}
-#modal a.close-modal {
-    position: absolute;
-    bottom: 20px;
-    right: 200px;
+    color: hsl(229, 25%, 31%);
+    font-weight: 700;
+    font-size: 36px;
 }
 #modal:target {
     display: block;
@@ -201,5 +198,22 @@ body {
     }
     .playground {
         margin: 40px auto;
+    }
+    #modal .modal-content {
+        width: 350px;
+        height: 350px;
+    }
+    #modal .modal-content * {
+        margin: 10px auto;
+    }
+    #modal .modal-content h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    #modal a.close-modal {
+        position: absolute;
+        top: 0px;
+        right: 20px;
     }
 }
