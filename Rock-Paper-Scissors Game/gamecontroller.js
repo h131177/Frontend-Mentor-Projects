@@ -33,10 +33,10 @@ class GameController {
         //toggle hidden class
         const triangle = this.rootElement.querySelector(".playground .triangle");
         triangle.classList.toggle("hidden");
-        const p1 = this.rootElement.querySelector(".playground p:nth-child(5)");
-        p1.classList.toggle("hidden");
-        const p2 = this.rootElement.querySelector(".playground p:nth-child(6)");
-        p2.classList.toggle("hidden");
+        const p5 = this.rootElement.querySelector(".playground p:nth-child(5)");
+        p5.classList.toggle("hidden");
+        const p6 = this.rootElement.querySelector(".playground p:nth-child(6)");
+        p6.classList.toggle("hidden");
         const rock = this.rootElement.querySelector(".playground img:nth-child(4)");
         rock.classList.toggle("hidden");
         const resultDiv = this.rootElement.querySelector(".result");
@@ -46,6 +46,27 @@ class GameController {
         const playground = this.rootElement.querySelector(".playground");
         playground.style.gridAutoRows = "minmax(auto, 190px)";
         playground.style.marginBottom = "0px";
+
+        //function to check viewport size
+        const p2 = this.rootElement.querySelector(".playground img:nth-child(2)");
+        const p3 = this.rootElement.querySelector(".playground img:nth-child(3)");
+
+        function checkViewportOver960px(x) {
+            if (x.matches) { // If media query matches
+                playground.style.maxWidth = "500px";
+                p2.style.alignSelf = "flex-end";
+                p3.style.alignSelf = "flex-end";
+            } else {
+                playground.style.maxWidth = "360px";
+                p2.style.alignSelf = "flex-start";
+                p3.style.alignSelf = "flex-start";
+            }
+        }
+
+        //Adds a listener for viewport over 960px
+        const x = window.matchMedia("(min-width: 960px)");
+        checkViewportOver960px(x); // Call listener function at run time
+        x.addListener(checkViewportOver960px); // Attach listener function on state changes
     }
 
     playAgain() {
