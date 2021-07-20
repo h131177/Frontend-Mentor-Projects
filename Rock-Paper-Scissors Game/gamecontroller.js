@@ -48,8 +48,10 @@ class GameController {
 
         p2.src = choiceInfo.get(this.choice).image;
         p2.style.borderColor = choiceInfo.get(this.choice).color;
+        p2.setAttribute("alt", this.choice);
         p3.src = choiceInfo.get(this.computerChoice).image;
         p3.style.borderColor = choiceInfo.get(this.computerChoice).color;
+        p3.setAttribute("alt", this.computerChoice);
 
         //Update score
         this.score += this.findWinner();
@@ -85,9 +87,11 @@ class GameController {
         const p3 = this.rootElement.querySelector(".playground img:nth-child(3)");
 
         p2.src = choiceInfo.get('paper').image;
+        p2.setAttribute("alt", "paper");
         p2.style.borderColor = "";
         p2.style.alignSelf = "";
         p3.src = choiceInfo.get('scissors').image;
+        p3.setAttribute("alt", "scissors");
         p3.style.borderColor = "";
         p3.style.alignSelf = "";
 
@@ -188,7 +192,7 @@ const x = window.matchMedia("(min-width: 960px)");
 //function to check viewport size
 function checkViewportOver960px(x) {
     if (x.matches) { // If media query matches
-        playGround.style.maxWidth = "500px";
+        playGround.style.maxWidth = "520px";
         play2.style.alignSelf = "flex-end";
         play3.style.alignSelf = "flex-end";
     } else {
