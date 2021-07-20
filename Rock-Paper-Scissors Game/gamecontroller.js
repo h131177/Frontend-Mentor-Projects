@@ -26,8 +26,9 @@ class GameController {
     play(e) {
         console.log("Playing");
         //Get your choice
-        console.log('You: ' + e.path[0].alt);
-        this.choice = e.path[0].alt;
+        //console.log('You: ' + e.path[0].alt);
+        this.choice = e.target.getAttribute("alt");
+        console.log('You: ' + e.target.getAttribute("alt"));
 
         //Get computer choice
         this.computerChoice = this.playComputer();
