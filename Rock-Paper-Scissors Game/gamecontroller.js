@@ -75,6 +75,11 @@ class GameController {
         const x = window.matchMedia("(min-width: 960px)");
         checkViewportOver960px(x); // Call listener function at run time
         x.addEventListener("change", checkViewportOver960px); // Attach listener function on state changes
+
+        //Remove/disable click listeners
+        this.rootElement.querySelector(".playground img:nth-child(2)").removeEventListener("click", this.play);
+        this.rootElement.querySelector(".playground img:nth-child(3)").removeEventListener("click", this.play);
+        this.rootElement.querySelector(".playground img:nth-child(4)").removeEventListener("click", this.play);
     }
 
     playAgain() {
@@ -97,6 +102,11 @@ class GameController {
         p3.src = choiceInfo.get('scissors').image;
         p3.style.borderColor = "";
         p3.style.alignSelf = "";
+
+        //Enable click again
+        this.rootElement.querySelector(".playground img:nth-child(2)").addEventListener("click", this.play);
+        this.rootElement.querySelector(".playground img:nth-child(3)").addEventListener("click", this.play);
+        this.rootElement.querySelector(".playground img:nth-child(4)").addEventListener("click", this.play);
     }
 
     playComputer() {
