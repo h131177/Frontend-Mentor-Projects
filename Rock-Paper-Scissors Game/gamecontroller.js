@@ -58,21 +58,6 @@ class GameController {
         }
         this.rootElement.querySelector(".score [data-score]").textContent = this.score;
         
-        //function to check viewport size
-        function checkViewportOver960px(x) {
-            if (x.matches) { // If media query matches
-                playground.style.maxWidth = "500px";
-                p2.style.alignSelf = "flex-end";
-                p3.style.alignSelf = "flex-end";
-            } else {
-                playground.style.maxWidth = "360px";
-                p2.style.alignSelf = "flex-start";
-                p3.style.alignSelf = "flex-start";
-            }
-        }
-
-        //Adds a listener for viewport over 960px
-        const x = window.matchMedia("(min-width: 960px)");
         checkViewportOver960px(x); // Call listener function at run time
         x.addEventListener("change", checkViewportOver960px); // Attach listener function on state changes
 
@@ -85,6 +70,9 @@ class GameController {
     playAgain() {
         console.log("Play again");
         this.toggleElements();
+
+        checkViewportOver960px(x); // Call listener function at run time
+        x.removeEventListener("change", checkViewportOver960px); // Remove listener function on state changes
 
         //Switch back again some css styling
         const playground = this.rootElement.querySelector(".playground");
@@ -189,3 +177,23 @@ import {choiceInfo} from './map.js'
 const controller = new GameController("root");
 
 document.addEventListener("DOMContentLoaded", controller.run);
+
+const playGround = document.querySelector(".playground");
+const play2 = document.querySelector(".playground img:nth-child(2)");
+const play3 = document.querySelector(".playground img:nth-child(3)");
+
+//Adds a listener for viewport over 960px
+const x = window.matchMedia("(min-width: 960px)");
+
+//function to check viewport size
+function checkViewportOver960px(x) {
+    if (x.matches) { // If media query matches
+        playGround.style.maxWidth = "500px";
+        play2.style.alignSelf = "flex-end";
+        play3.style.alignSelf = "flex-end";
+    } else {
+        playGround.style.maxWidth = "360px";
+        play2.style.alignSelf = "flex-start";
+        play3.style.alignSelf = "flex-start";
+    }
+}
