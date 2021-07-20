@@ -47,10 +47,16 @@ class GameController {
         playground.style.gridAutoRows = "minmax(auto, 190px)";
         playground.style.marginBottom = "0px";
 
-        //function to check viewport size
+        //Add correct styling (choice and color)
         const p2 = this.rootElement.querySelector(".playground img:nth-child(2)");
         const p3 = this.rootElement.querySelector(".playground img:nth-child(3)");
 
+        p2.src = choiceInfo.get(choice).image;
+        p2.style.borderColor = choiceInfo.get(choice).color;
+        p3.src = choiceInfo.get(computerChoice).image;
+        p3.style.borderColor = choiceInfo.get(computerChoice).color;
+        
+        //function to check viewport size
         function checkViewportOver960px(x) {
             if (x.matches) { // If media query matches
                 playground.style.maxWidth = "500px";
