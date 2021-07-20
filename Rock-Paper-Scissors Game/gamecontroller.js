@@ -73,7 +73,7 @@ class GameController {
         //Adds a listener for viewport over 960px
         const x = window.matchMedia("(min-width: 960px)");
         checkViewportOver960px(x); // Call listener function at run time
-        x.addListener(checkViewportOver960px); // Attach listener function on state changes
+        x.addEventListener("change", checkViewportOver960px); // Attach listener function on state changes
     }
 
     playAgain() {
