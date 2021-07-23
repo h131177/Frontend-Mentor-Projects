@@ -54,44 +54,60 @@ Users should be able to:
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-To see how you can add code snippets, see below:
-
+**All "states" of the game in one HTML document** 
+- Using javascript to add/remove .hidden class, to show the correct elements for that "state"
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<p class="hidden">YOU PICKED</p>
+<p class="hidden">THE HOUSE PICKED</p>
+<div class="result hidden">
+  <p data-result>YOU LOSE</p>
+  <button>PLAY AGAIN</button>
+</div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.hidden {
+    display: none;
 }
 ```
+
+**CSS only Modal**
+- Display modal when you click on the div with the anchor tag using css :target
+```css
+#modal:target {
+    display: block;
+}
+```
+
+**Window matchMedia() Method**
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+//function to check viewport size
+function checkViewportOver960px(x) {
+    if (x.matches) { // If media query matches
+        playGround.style.maxWidth = "520px";
+        play2.style.alignSelf = "flex-end";
+        play3.style.alignSelf = "flex-end";
+    } else {
+        playGround.style.maxWidth = "360px";
+        play2.style.alignSelf = "flex-start";
+        play3.style.alignSelf = "flex-start";
+    }
 }
 ```
+
+****
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@h131177](https://www.frontendmentor.io/profile/h131177)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
