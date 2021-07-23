@@ -6,4 +6,5 @@ Projects from https://www.frontendmentor.io/
 
 ### Rock, Paper, Scissors game (In Progress)
 HTML, CSS and Javascript
-#### What I learned:
+#### [More info](https://github.com/h131177/Frontend-Mentor-Projects/blob/master/Rock-Paper-Scissors%20Game/README-template.md)
+
