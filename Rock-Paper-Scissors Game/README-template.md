@@ -30,11 +30,11 @@ Users should be able to:
 
 **Mobile**
 
-![](./design/screenshotMobile1.PNG) ![](./design/screenshotMobile2.PNG)
+![](./design/screenshotMobile1.PNG) ![](./design/screenshotMobile3.PNG)
 
 **Desktop**
 
-![](./design/screenshotDesktop1.PNG) ![](./design/screenshotDesktop2.PNG)
+![](./design/screenshotDesktop1.PNG) ![](./design/screenshotDesktop2.PNG) ![](./design/screenshotDesktop3.PNG)
 
 ### Links
 
@@ -45,8 +45,7 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML5
 - CSS Grid
 - Mobile-first approach
 - Javascript
