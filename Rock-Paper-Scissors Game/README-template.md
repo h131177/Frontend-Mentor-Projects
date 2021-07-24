@@ -79,7 +79,12 @@ Use this section to recap over some of your major learnings while working throug
 ```
 
 **Window matchMedia() Method**
+- Adds a llstener when the "state" of the game changes and remove it when it changes back
+- Used to show the correct design for both states (play game and show result)
 ```js
+//Adds a listener for viewport over 960px
+const x = window.matchMedia("(min-width: 960px)");
+
 //function to check viewport size
 function checkViewportOver960px(x) {
     if (x.matches) { // If media query matches
@@ -92,15 +97,14 @@ function checkViewportOver960px(x) {
         play3.style.alignSelf = "flex-start";
     }
 }
+
+checkViewportOver960px(x); // Call listener function at run time
+x.addEventListener("change", checkViewportOver960px); // Attach listener function on state changes
 ```
 
 ****
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 ### Useful resources
 
@@ -110,4 +114,3 @@ Use this section to outline areas that you want to continue focusing on in futur
 ## Author
 
 - Frontend Mentor - [@h131177](https://www.frontendmentor.io/profile/h131177)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
