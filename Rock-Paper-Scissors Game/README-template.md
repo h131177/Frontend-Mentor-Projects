@@ -110,7 +110,7 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 - [TheNetNinja Youtube Channel](https://www.youtube.com/c/TheNetNinja) - He is just amazing. Before I started this challenge, I have seen many of his videos about html, css and js. You NEED to check out his channel, great teacher.
 - [Codingflag Youtube Channel](https://www.youtube.com/watch?v=bH6Xcszq2tQ) - First I found a tutorial on how to make a modal box with css and js on w3schools website, but I wanted to do it without js. I found this youtube video very helpful for building a modal with css only.
-- [w3schools](https://www.w3schools.com/jsref/met_win_matchmedia.asp) - This js reference helped me alot when I was stuck on how to show the correct design when the state changes both in both mobile and desktop.
+- [w3schools JS Reference matchMedia()](https://www.w3schools.com/jsref/met_win_matchmedia.asp) - This js reference helped me alot when I was stuck on how to show the correct design when the state changes both in both mobile and desktop.
 - [w3schools CSS Reference](https://www.w3schools.com/cssref/default.asp) - I used it to find the correct javaScript syntax when using object.style for changing styles with javascript. Because it is not allways the same name as in css.
 
 
