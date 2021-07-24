@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/h131177/Frontend-Mentor-Projects/tree/master/Rock-Paper-Scissors%20Game)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/mobilefirst-rock-paper-scissors-game-using-css-grid-and-javascript-bCkoOLL6B)
 - Live Site URL: [Github Pages URL](https://h131177.github.io/Frontend-Mentor-Projects/Rock-Paper-Scissors%20Game/index.html)
 
 ## My process
