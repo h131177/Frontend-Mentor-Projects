@@ -14,7 +14,7 @@ body {
     background: white;
     border-radius: 15px;
     display: inline-block;
-    margin: 100px auto;
+    margin: 160px auto;
 }
 .card-header {
     position: relative;
@@ -30,12 +30,24 @@ body {
     text-align: center;
     margin-top: 75px;
 }
+.name, .age {
+    display: inline;
+}
 .name, .info p:first-child {
     font-size: 18px;
     font-weight: bold;
+}
+.age {
+    color: hsl(229, 23%, 23%);
+}
+.city {
+    color: hsl(0, 0%, 59%);
 }
 .info {
     display: inline-block;
     width: 32%;
     text-align: center;
+}
+.info p:nth-child(2) {
+    color: hsl(0, 0%, 59%);
 }
