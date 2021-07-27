@@ -8,16 +8,29 @@
 body {
     background: hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', sans-serif;
+    margin: 0 20px;
+}
+
+.bg-top {
+    position: relative;
+}
+.background-top {
+    position: absolute;
+    top: 400px;
+    left: 50px;
 }
 
 .card {
     background: white;
     border-radius: 15px;
-    display: inline-block;
     margin: 160px auto;
+    width: 350px;
 }
 .card-header {
     position: relative;
+}
+.background-pattern-card {
+    border-radius: 15px 15px 0 0;
 }
 .card-header .victor {
     position: absolute;
@@ -36,18 +49,27 @@ body {
 .name, .info p:first-child {
     font-size: 18px;
     font-weight: bold;
-}
-.age {
+    margin: 0;
     color: hsl(229, 23%, 23%);
 }
+.age {
+    color: hsl(227, 10%, 46%);
+    font-size: 18px;
+}
 .city {
-    color: hsl(0, 0%, 59%);
+    color: hsl(227, 10%, 46%);
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .info {
     display: inline-block;
     width: 32%;
     text-align: center;
+    margin: 20px 0 15px 0;
 }
 .info p:nth-child(2) {
     color: hsl(0, 0%, 59%);
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-top: 5px;
 }
