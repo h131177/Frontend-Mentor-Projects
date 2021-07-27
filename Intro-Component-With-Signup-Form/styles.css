@@ -6,6 +6,70 @@
     color: hsl(228, 45%, 44%);
 }
 
+/* base styles */
 body {
     font-family: 'Poppins', sans-serif;
+    background: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-mobile.png);
+    font-size: 16px;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    margin: 20px 60px;
+    margin-top: 60px;
+}
+.intro, .header p {
+    text-align: center;
+    padding: 15px;
+}
+
+/* header styles */
+.header {
+    background: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 0px 30px;
+    box-shadow: 0px 5px grey
+}
+.header span {
+    font-weight: bold;
+}
+
+/* form styles */
+form {
+    background: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 5px grey
+}
+input {
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    width: 85%;
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button {
+    background: hsl(154, 59%, 51%);
+    color: white;
+    box-shadow: 0px 5px grey;
+    width: 93%;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+form .terms{
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+    padding: 0px 30px;
+}
+.terms a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: bold;
 }
