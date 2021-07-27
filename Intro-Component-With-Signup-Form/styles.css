@@ -23,6 +23,9 @@ h3 {
     text-align: center;
     padding: 15px;
 }
+.intro, .form {
+    max-width: 500px;
+}
 
 /* header styles */
 .header {
@@ -76,16 +79,19 @@ form .terms{
 
 
 /* media queries */
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1030px) {
     body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         height: 100vh;
         margin: auto 0;
-        
+        flex-wrap: wrap;
     }
     .intro, .form {
         display: inline-block;
-        max-width: 500px;
+        
     }
     h3 {
         font-size: 30px;
