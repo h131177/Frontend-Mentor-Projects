@@ -15,11 +15,13 @@ body {
     color: white;
 }
 
-h3 {
-    margin: 20px 60px;
-    margin-top: 60px;
+h2 {
+    margin: 20px 40px;
+    margin-top: 70px;
+    letter-spacing: 1px;
 }
-.intro, .header p {
+.intro {
+    margin-bottom: 40px;
     text-align: center;
     padding: 15px;
 }
@@ -33,7 +35,11 @@ h3 {
     border-radius: 5px;
     margin: 20px;
     padding: 0px 30px;
-    box-shadow: 0px 5px hsla(248, 32%, 49%, 0.3);
+    box-shadow: 0px 8px hsla(248, 32%, 49%, 0.3);
+}
+.header p {
+    text-align: center;
+    padding: 20px;
 }
 .header span {
     font-weight: bold;
@@ -42,28 +48,33 @@ h3 {
 /* form styles */
 form {
     background: white;
-    margin: 20px;
-    padding: 10px;
+    margin: 25px 20px;
+    padding: 15px;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 0px 5px hsla(248, 32%, 49%, 0.3);
+    box-shadow: 0px 8px hsla(248, 32%, 49%, 0.3);
 }
 input {
+    margin: 10px 5px;
+    padding: 20px 15px;
+}
+input[type=text], input[type=password] {
     border: 1px solid hsl(246, 25%, 77%);
     border-radius: 5px;
-    width: 85%;
-    margin: 5px;
-    padding: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    width: 85%;
 }
 
 .button {
     background: hsl(154, 59%, 51%);
     color: white;
+    border: 1px solid hsl(154, 59%, 51%);
+    border-radius: 5px;
     box-shadow: 0px 5px hsla(154, 59%, 45%, 0.7);
-    width: 93%;
+    width: 96%;
     font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 form .terms{
@@ -81,6 +92,7 @@ form .terms{
 /* media queries */
 @media screen and (min-width: 1030px) {
     body {
+        background-image: url(./images/bg-intro-desktop.png);
         display: flex;
         justify-content: center;
         align-items: center;
