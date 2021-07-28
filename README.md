@@ -10,3 +10,6 @@ HTML, CSS and Javascript
 
 ### Profile Card Component (In Progress)
 HTML, CSS
+
+### Intro component with sign-up form (In Progress)
+HTML, CSS and Javascript
