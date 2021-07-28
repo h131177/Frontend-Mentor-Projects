@@ -96,4 +96,12 @@ form .terms{
     h3 {
         font-size: 30px;
     }
+    footer {
+        position: relative;
+    }
+    .attribution {
+        position: absolute;
+        top: 200px;
+        left: -400px;
+    }
 }
