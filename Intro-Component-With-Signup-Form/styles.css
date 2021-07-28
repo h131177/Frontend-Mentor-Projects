@@ -105,7 +105,10 @@ form .terms{
         display: inline-block;
         
     }
-    h3 {
+    .intro p {
+        text-align: left;
+    }
+    h2 {
         font-size: 30px;
     }
     footer {
