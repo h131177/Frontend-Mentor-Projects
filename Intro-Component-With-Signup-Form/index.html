@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="validation.js" defer></script>
   <title>Frontend Mentor | Intro component with sign up form</title>
 
 </head>
@@ -26,9 +27,13 @@
     
        <form action="#">
          <input type="text" id="firstName" placeholder="First Name">
+         <p class="error hidden">First name cannot be empty</p>
          <input type="text" id="lastName" placeholder="Last Name ">
+         <p class="error hidden">Last name cannot be empty</p>
          <input type="text" id="email" placeholder="Email Address">
+         <p class="error hidden">Email cannot be empty</p>
          <input type="password" name="" id="password" placeholder="Password">
+         <p class="error hidden">Password cannot be empty</p>
          <input type="button" class="button" value="Claim your free trial ">
          <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
        </form>
