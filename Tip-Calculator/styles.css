@@ -9,9 +9,55 @@
 body {
     background: hsl(185, 41%, 84%);
 }
-.container {
-    background: white;
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
+.container {
+    background: hsl(0, 0%, 100%);
+    border-radius: 30px;
+}
+label {
+    color: hsl(184, 14%, 56%);
+    display: block;
+}
+input {
+    background: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.select {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(auto, 50px);
+    gap: 15px;
+    margin: 20px;
+}
+.select div {
+    background: hsl(183, 100%, 15%);
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 24px;
+    border-radius: 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.select input {
+    text-align: end;
+}
+.select * {
+    height: 50px;
+    width: 150px;
+}
+
+
 .result {
     background: hsl(183, 100%, 15%);
 }
