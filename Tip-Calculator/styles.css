@@ -84,9 +84,10 @@ input {
 }
 .result > span {
     text-align: right;
+    color: hsl(172, 67%, 45%);
 }
 .result input {
-    background: green;
+    background: hsl(172, 67%, 45%);
     text-align: center;
     grid-column: 1/3;
 }
