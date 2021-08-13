@@ -8,6 +8,7 @@
 
 body {
     background: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
 }
 img {
     display: block;
