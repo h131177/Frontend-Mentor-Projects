@@ -17,6 +17,9 @@ img {
     margin-top: 50px;
     margin-bottom: 40px;
 }
+p {
+    margin: 0;
+}
 .container {
     background: hsl(0, 0%, 100%);
     border-radius: 30px;
@@ -25,6 +28,7 @@ img {
 label {
     color: hsl(184, 14%, 56%);
     display: block;
+    margin-top: 30px;
 }
 input {
     background: hsl(189, 41%, 97%);
@@ -34,6 +38,10 @@ input {
     font-size: 24px;
     text-align: end;
     box-sizing: border-box;
+}
+
+.userInput > input {
+    margin-bottom: 30px;
 }
 
 .select {
@@ -61,8 +69,23 @@ input {
 
 .result {
     background: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    gap: 20px;
 }
 .result p {
     color: hsl(0, 0%, 100%);
-    width: 95px;
+}
+.result div span {
+    color: hsl(184, 14%, 56%);;
+}
+.result > span {
+    text-align: right;
+}
+.result input {
+    background: green;
+    text-align: center;
+    grid-column: 1/3;
 }
