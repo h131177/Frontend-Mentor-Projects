@@ -1,0 +1,17 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    background: hsl(185, 41%, 84%);
+}
+.container {
+    background: white;
+}
+.result {
+    background: hsl(183, 100%, 15%);
+}
