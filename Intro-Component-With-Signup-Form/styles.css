@@ -26,7 +26,6 @@ h2 {
     padding: 15px;
 }
 .intro, .form {
-    min-width: 360px;
     max-width: 500px;
 }
 .hidden {
@@ -59,6 +58,9 @@ h2 {
 }
 
 /* form styles */
+.form {
+    min-width: 360px;
+}
 form {
     background: white;
     margin: 25px 20px;
@@ -92,6 +94,7 @@ input[type=text], input[type=password] {
     text-transform: uppercase;
     font-size: 18px;
     padding: 15px 15px 10px 15px;
+    margin-bottom: 5px;
 }
 form .terms{
     color: hsl(246, 25%, 77%);
@@ -109,7 +112,7 @@ form .terms{
 /* media queries */
 @media screen and (min-width: 1030px) {
     body {
-        background-image: url(./images/bg-intro-desktop.png);
+        background-image: url(./images/bg-intro-desktop.png) no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -130,16 +133,28 @@ form .terms{
         text-align: left;
         margin-left: 0;
         line-height: 1.1;
+        margin-bottom: 35px;
+    }
+    .header p {
+        padding: 18px;
     }
     .form {
+        min-width: 570px;
         max-width: 570px;
+    }
+    form {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    input {
+        margin: 10px 5px;
     }
     footer {
         position: relative;
     }
     .attribution {
         position: absolute;
-        top: 300px;
+        top: 350px;
         left: -400px;
     }
 }
