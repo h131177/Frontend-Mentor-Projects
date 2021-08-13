@@ -31,9 +31,10 @@ label {
     margin-top: 30px;
 }
 input {
-    background: hsl(189, 41%, 97%);
+    background: hsl(185, 41%, 95%);
     color: hsl(183, 100%, 15%);
     padding: 10px;
+    border: none;
     border-radius: 5px;
     font-size: 24px;
     text-align: end;
