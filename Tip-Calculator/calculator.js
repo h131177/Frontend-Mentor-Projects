@@ -10,8 +10,18 @@ let tip = 0;
 let tipAmount = 0;
 let total = 0;
 
+function deselect() {
+    fivePercent.style.background = "";
+    tenPercent.style.background = "";
+    fifteenPercent.style.background = "";
+    twentyfivePercent.style.background = "";
+    fiftyPercent.style.background = "";
+    custom.value = "";
+    custom.style.background = "";
+}
+
 function select(e) {
-    //Deselect all first
+    deselect();
     console.log("You selected tip %");
     if(e.target.tagName == "DIV") {
         tip = e.target.textContent;
@@ -43,13 +53,7 @@ function reset() {
     console.log("reset all");
     billInput.value = "0";
     people.value = "0";
-    fivePercent.style.background = "";
-    tenPercent.style.background = "";
-    fifteenPercent.style.background = "";
-    twentyfivePercent.style.background = "";
-    fiftyPercent.style.background = "";
-    custom.value = "";
-    custom.style.background = "";
+    deselect();
     document.querySelector("[data-tip]").textContent = "$0.00";
     document.querySelector("[data-total]").textContent= "$0.00";
 }
