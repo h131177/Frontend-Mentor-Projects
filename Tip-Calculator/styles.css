@@ -23,10 +23,10 @@ p {
 .container {
     background: hsl(0, 0%, 100%);
     border-radius: 30px;
-    padding: 0 30px;
+    padding: 15px 30px;
 }
 label {
-    color: hsl(184, 14%, 56%);
+    color: hsl(186, 14%, 43%);
     display: block;
     margin-top: 30px;
 }
@@ -39,6 +39,12 @@ input {
     font-size: 24px;
     text-align: end;
     box-sizing: border-box;
+}
+.userInput input:nth-child(2) {
+    background: url(./images/icon-dollar.svg) left no-repeat;
+}
+.userInput > input:nth-child(6) {
+    background: url(./images/icon-person.svg) left no-repeat;
 }
 
 .userInput > input {
@@ -85,9 +91,14 @@ input {
 .result > span {
     text-align: right;
     color: hsl(172, 67%, 45%);
+    font-size: 24px;
+    font-weight: 700;
 }
 .result input {
     background: hsl(172, 67%, 45%);
     text-align: center;
     grid-column: 1/3;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px;
 }
