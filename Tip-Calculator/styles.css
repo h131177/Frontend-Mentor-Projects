@@ -14,7 +14,7 @@ body {
 img {
     display: block;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 40px;
 }
 p {
@@ -28,7 +28,8 @@ p {
 label {
     color: hsl(186, 14%, 43%);
     display: block;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 input {
     background: hsl(185, 41%, 95%);
@@ -40,6 +41,9 @@ input {
     text-align: end;
     box-sizing: border-box;
 }
+.userInput {
+    margin-bottom: 10px;
+}
 .userInput input:nth-child(2) {
     background: url(./images/icon-dollar.svg) left no-repeat;
 }
@@ -48,7 +52,7 @@ input {
 }
 
 .userInput > input {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .select {
@@ -57,6 +61,7 @@ input {
     grid-auto-rows: minmax(auto, 50px);
     gap: 16px;
     margin: 15px;
+    margin-bottom: 40px;
 }
 .select div {
     background: hsl(183, 100%, 15%);
@@ -73,14 +78,14 @@ input {
     width: 155px;
 }
 
-
 .result {
     background: hsl(183, 100%, 15%);
     border-radius: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 30px;
-    gap: 20px;
+    padding-top: 50px;
+    gap: 30px;
 }
 .result p {
     color: hsl(0, 0%, 100%);
