@@ -34,7 +34,16 @@ function select(e) {
     e.target.style.background = "hsl(172, 67%, 45%)";
 }
 
+function checkZero() {
+    if(people.value == 0) {
+        people.style.border = "2px solid red";
+    } else {
+        people.style.border = "";
+    }
+}
+
 function calculate() {
+    checkZero();
     console.log("Calculate tip amount and total bill");
     if(billInput.value != 0 && people.value != 0) {
         bill = Number.parseFloat(billInput.value);
