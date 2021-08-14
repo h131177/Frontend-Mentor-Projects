@@ -43,6 +43,15 @@ function reset() {
     console.log("reset all");
     billInput.value = "0";
     people.value = "0";
+    fivePercent.style.background = "";
+    tenPercent.style.background = "";
+    fifteenPercent.style.background = "";
+    twentyfivePercent.style.background = "";
+    fiftyPercent.style.background = "";
+    custom.value = "";
+    custom.style.background = "";
+    document.querySelector("[data-tip]").textContent = "$0.00";
+    document.querySelector("[data-total]").textContent= "$0.00";
 }
 
 const fivePercent = document.querySelector(".select div:nth-child(1)");
