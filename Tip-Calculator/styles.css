@@ -45,10 +45,10 @@ input {
     margin-bottom: 10px;
 }
 .userInput input:nth-child(2) {
-    background: url(./images/icon-dollar.svg) left no-repeat;
+    background: url(./images/icon-dollar.svg) 5% 50% no-repeat;
 }
 .userInput > input:nth-child(6) {
-    background: url(./images/icon-person.svg) left no-repeat;
+    background: url(./images/icon-person.svg) 5% 50% no-repeat;
 }
 
 .userInput > input {
