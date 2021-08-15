@@ -27,13 +27,16 @@ p {
 }
 label {
     color: hsl(186, 14%, 43%);
+    font-weight: 700;
     display: block;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 input {
-    background: hsl(185, 41%, 95%);
+    background: hsl(185, 41%, 97%);
     color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -45,14 +48,17 @@ input {
     margin-bottom: 10px;
 }
 .userInput input:nth-child(2) {
-    background: url(./images/icon-dollar.svg) 5% 50% no-repeat;
+    background: hsl(185, 41%, 97%) url(./images/icon-dollar.svg) 5% 50% no-repeat;
 }
 .userInput > input:nth-child(6) {
-    background: url(./images/icon-person.svg) 5% 50% no-repeat;
+    background: hsl(185, 41%, 97%) url(./images/icon-person.svg) 5% 50% no-repeat;
 }
 
 .userInput > input {
     margin-bottom: 20px;
+}
+#custom::placeholder {
+    color: hsl(186, 14%, 43%);
 }
 
 .select {
@@ -91,7 +97,7 @@ input {
     color: hsl(0, 0%, 100%);
 }
 .result div span {
-    color: hsl(184, 14%, 56%);;
+    color: hsl(184, 14%, 56%);
 }
 .result > span {
     text-align: right;
