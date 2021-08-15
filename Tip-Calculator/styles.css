@@ -68,6 +68,7 @@ input {
     gap: 16px;
     margin: 15px;
     margin-bottom: 40px;
+    margin-left: 0;
 }
 .select div {
     background: hsl(183, 100%, 15%);
