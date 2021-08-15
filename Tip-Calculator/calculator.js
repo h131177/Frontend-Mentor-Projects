@@ -16,8 +16,13 @@ function deselect() {
     fifteenPercent.style.background = "";
     twentyfivePercent.style.background = "";
     fiftyPercent.style.background = "";
-    custom.value = "";
+    // custom.value = "";
     custom.style.background = "";
+    fivePercent.style.color = "";
+    tenPercent.style.color = "";
+    fifteenPercent.style.color = "";
+    twentyfivePercent.style.color = "";
+    fiftyPercent.style.color = "";
 }
 
 function select(e) {
@@ -25,6 +30,7 @@ function select(e) {
     console.log("You selected tip %");
     if(e.target.tagName == "DIV") {
         tip = e.target.textContent;
+        e.target.style.color = "hsl(183, 100%, 15%)";
     } else {
         tip = e.target.value;
     }
