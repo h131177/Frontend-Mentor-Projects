@@ -23,7 +23,7 @@ p {
 .container {
     background: hsl(0, 0%, 100%);
     border-radius: 30px;
-    padding: 15px 30px;
+    padding: 15px 20px;
 }
 label {
     color: hsl(186, 14%, 43%);
@@ -49,6 +49,7 @@ input[type=text]:hover {
 }
 .userInput {
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 .userInput input:nth-child(2) {
     background: hsl(185, 41%, 97%) url(./images/icon-dollar.svg) 5% 50% no-repeat;
@@ -101,6 +102,8 @@ input[type=text]:hover {
     padding: 30px;
     padding-top: 50px;
     gap: 30px;
+    width: 365px;
+    box-sizing: border-box;
 }
 .result p {
     color: hsl(0, 0%, 100%);
