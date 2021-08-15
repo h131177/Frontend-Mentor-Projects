@@ -42,7 +42,7 @@ function select(e) {
 
 function checkZero() {
     if(people.value == 0) {
-        people.style.border = "2px solid red";
+        people.style.border = "3px solid red";
     } else {
         people.style.border = "";
     }
