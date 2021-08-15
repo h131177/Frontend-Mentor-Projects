@@ -73,6 +73,7 @@ input[type=text]:hover {
     margin: 15px;
     margin-bottom: 40px;
     margin-left: 0;
+    max-width: 335px;
 }
 .select div {
     background: hsl(183, 100%, 15%);
@@ -127,4 +128,19 @@ input[type=text]:hover {
 }
 .result input:hover {
     background: hsl(185, 41%, 84%)
+}
+
+/* media queries */
+@media screen and (min-width: 760px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .select {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .select * {
+        width: 100%;
+    }
 }
