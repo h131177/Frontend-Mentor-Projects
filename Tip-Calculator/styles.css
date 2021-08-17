@@ -138,7 +138,10 @@ input[type=text]:hover {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 800px;
+        width: 64%;
+        min-width: 800px;
+        max-width: 1020px;
+        padding: 30px;
     }
 
     .select {
