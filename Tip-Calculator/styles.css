@@ -24,6 +24,9 @@ p {
     background: hsl(0, 0%, 100%);
     border-radius: 30px;
     padding: 15px 20px;
+    /* width: 400px; */
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 label {
     color: hsl(186, 14%, 43%);
@@ -131,7 +134,7 @@ input[type=text]:hover {
 }
 
 /* media queries */
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 800px) {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -142,5 +145,11 @@ input[type=text]:hover {
     }
     .select * {
         width: 100%;
+    }
+    .result > span {
+        font-size: 48px;
+    }
+    .result input {
+        height: 55px;
     }
 }
