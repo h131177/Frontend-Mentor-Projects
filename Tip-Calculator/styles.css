@@ -142,10 +142,12 @@ input[type=text]:hover {
         min-width: 800px;
         max-width: 1020px;
         padding: 30px;
+        gap: 10px;
     }
 
     .select {
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 420px;
     }
     .select * {
         width: 100%;
@@ -156,5 +158,14 @@ input[type=text]:hover {
     .result input {
         height: 55px;
         align-self: flex-end;
+    }
+    .userInput, .result {
+        width: 100%;
+    }
+    .userInput {
+        margin-left: 0;
+    }
+    .userInput > input {
+        width: 85%;
     }
 }
