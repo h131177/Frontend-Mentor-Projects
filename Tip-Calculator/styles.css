@@ -24,7 +24,7 @@ p {
     background: hsl(0, 0%, 100%);
     border-radius: 30px;
     padding: 15px 20px;
-    width: 400px;
+    width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -32,15 +32,15 @@ label {
     color: hsl(186, 14%, 43%);
     font-weight: 700;
     display: block;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 17px;
+    margin-bottom: 6px;
 }
 input {
     background: hsl(185, 41%, 97%);
     color: hsl(183, 100%, 15%);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
-    padding: 10px;
+    padding: 5px;
     border: none;
     border-radius: 5px;
     font-size: 24px;
@@ -72,11 +72,11 @@ input[type=text]:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(auto, 50px);
-    gap: 16px;
+    gap: 15px;
     margin: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     margin-left: 0;
-    max-width: 335px;
+    max-width: 305px;
 }
 .select div {
     background: hsl(183, 100%, 15%);
@@ -86,7 +86,7 @@ input[type=text]:hover {
     font-size: 24px;
     font-weight: 700;
     border-radius: 5px;
-    padding-top: 10px;
+    padding-top: 5px;
     box-sizing: border-box;
 }
 .select div:hover {
@@ -94,8 +94,8 @@ input[type=text]:hover {
     color: hsl(183, 100%, 15%);
 }
 .select * {
-    height: 55px;
-    width: 160px;
+    height: 48px;
+    width: 145px;
 }
 
 .result {
@@ -103,10 +103,10 @@ input[type=text]:hover {
     border-radius: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 30px;
-    padding-top: 50px;
-    gap: 30px;
-    width: 365px;
+    padding: 25px;
+    padding-top: 40px;
+    gap: 25px;
+    width: 330px;
     box-sizing: border-box;
 }
 .result p {
@@ -127,7 +127,7 @@ input[type=text]:hover {
     grid-column: 1/3;
     font-weight: 700;
     font-size: 20px;
-    padding: 12px;
+    padding: 9px;
 }
 .result input:hover {
     background: hsl(185, 41%, 84%)
