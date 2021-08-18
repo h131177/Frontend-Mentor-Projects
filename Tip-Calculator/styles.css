@@ -140,7 +140,7 @@ input[type=text]:hover {
         grid-template-columns: 1fr 1fr;
         width: 64%;
         min-width: 800px;
-        max-width: 930px;
+        max-width: 922px;
         padding: 30px;
         gap: 10px;
     }
@@ -148,20 +148,20 @@ input[type=text]:hover {
     .select {
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 90%;
-        gap: 15px;
     }
     .select * {
         width: 100%;
-        height: 48px;
     }
     .result {
         gap: 0;
+        padding: 40px;
+        padding: 50px;
     }
     .result > span {
         font-size: 48px;
     }
     .result input {
-        height: 55px;
+        height: 45px;
         align-self: flex-end;
         grid-row: 6;
     }
@@ -169,7 +169,7 @@ input[type=text]:hover {
         width: 100%;
     }
     .userInput {
-        margin-left: 0;
+        margin-left: 17px;
     }
     .userInput > input {
         width: 85%;
