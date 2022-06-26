@@ -8,6 +8,7 @@
 
 body {
     background: hsl(218, 23%, 16%);
+    font-family: 'Manrope', sans-serif;
 }
 
 .container {
@@ -21,4 +22,8 @@ body {
 .dice {
     background: hsl(150, 100%, 66%);
     border: 15px solid hsl(150, 100%, 66%);
+}
+
+.advice {
+    font-size: 28px;
 }
