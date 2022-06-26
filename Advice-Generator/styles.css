@@ -1,0 +1,24 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    background: hsl(218, 23%, 16%);
+}
+
+.container {
+    background: hsl(217, 19%, 38%);
+}
+
+.adviceNumber {
+    color: hsl(150, 100%, 66%);
+}
+
+.dice {
+    background: hsl(150, 100%, 66%);
+    border: 15px solid hsl(150, 100%, 66%);
+}
