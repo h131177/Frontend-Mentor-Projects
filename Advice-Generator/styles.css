@@ -12,18 +12,34 @@ body {
 }
 
 .container {
-    background: hsl(217, 19%, 38%);
+    background: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    margin: 100px 10px;
+    padding: 15px;
+    position: relative;
+}
+
+.container > img:nth-child(3) {
+    margin-bottom: 30px;
 }
 
 .adviceNumber {
     color: hsl(150, 100%, 66%);
+    text-align: center;
+    letter-spacing: 3px;
 }
 
 .dice {
     background: hsl(150, 100%, 66%);
     border: 15px solid hsl(150, 100%, 66%);
+    border-radius: 25px;
+    position: absolute;
+    bottom: -25px;
+    left: 40%;
 }
 
 .advice {
     font-size: 28px;
+    color: hsl(193, 38%, 86%);
+    text-align: center;
 }
