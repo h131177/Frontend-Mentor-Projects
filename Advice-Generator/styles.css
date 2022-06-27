@@ -38,6 +38,11 @@ body {
     left: 40%;
 }
 
+.dice:hover {
+    box-shadow: 0px 0px 30px hsl(150, 100%, 66%);
+    transition: all 0.2s ease-in;
+}
+
 .advice {
     font-size: 28px;
     color: hsl(193, 38%, 86%);
