@@ -8,8 +8,11 @@ Projects from https://www.frontendmentor.io/
 HTML, CSS and Javascript
 #### [More info](https://github.com/h131177/Frontend-Mentor-Projects/blob/master/Rock-Paper-Scissors%20Game/README.md)
 
-### Profile Card Component (In Progress)
+### Profile Card Component
 HTML, CSS
 
-### Intro component with sign-up form (In Progress)
+### Intro component with sign-up form
 HTML, CSS and Javascript
+
+### Advice Generator (In Progress)
+HTML, CSS, Javascript and API
