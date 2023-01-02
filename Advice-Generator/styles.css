@@ -14,14 +14,10 @@ body {
 .container {
     background: hsl(217, 19%, 24%);
     border-radius: 10px;
-    margin: 100px auto;
+    margin: 100px 10px;
     padding: 15px;
     position: relative;
     max-width: 500px;
-}
-
-.container > img:nth-child(3) {
-    margin-bottom: 30px;
 }
 
 .adviceNumber {
@@ -53,4 +49,5 @@ body {
 .divider {
     display: block;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
