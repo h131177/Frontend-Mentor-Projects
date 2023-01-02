@@ -56,4 +56,8 @@ body {
     .container {
         margin: 100px auto;
     }
+
+    .dice {
+        left: 45%;
+    }
 }
