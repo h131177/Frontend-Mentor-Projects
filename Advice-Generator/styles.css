@@ -57,6 +57,9 @@ body {
         margin: 100px auto;
     }
 
+    .divider {
+        margin-bottom: 50px;
+    }
     .dice {
         left: 45%;
     }
