@@ -32,7 +32,8 @@ body {
     border-radius: 25px;
     position: absolute;
     bottom: -25px;
-    left: 43%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .dice:hover {
@@ -59,8 +60,5 @@ body {
 
     .divider {
         margin-bottom: 50px;
-    }
-    .dice {
-        left: 45%;
     }
 }
