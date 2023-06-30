@@ -9,3 +9,6 @@
 img {
     background: hsl(259, 100%, 65%);
 }
+img:hover {
+    background: hsl(0, 0%, 8%);
+}
