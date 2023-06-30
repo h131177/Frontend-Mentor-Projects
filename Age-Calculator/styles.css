@@ -6,9 +6,32 @@
     color: hsl(228, 45%, 44%); 
 }
 
+body {
+    background: hsl(0, 0%, 94%);
+    font-family: Poppins;
+}
+.container {
+    background: hsl(0, 0%, 100%);
+    border-radius: 20px 20px 100px 20px;
+}
+
 img {
     background: hsl(259, 100%, 65%);
 }
 img:hover {
     background: hsl(0, 0%, 8%);
+}
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+label {
+    display: block;
+}
+input {
+    max-width: 75px;
+}
+
+p {
+    display: inline;
 }

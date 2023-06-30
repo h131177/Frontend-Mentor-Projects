@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Age calculator app</title>
 
 </head>
@@ -13,14 +15,20 @@
 
   <div class="container">
     <div class="top">
-      <label for="">Day</label>
-      <input type="text">
+      <div class="day">
+        <label for="">DAY</label>
+        <input type="text" placeholder="DD">
+      </div>
       
-      <label for="">Month</label>
-      <input type="text">
+      <div class="month">
+        <label for="">MONTH</label>
+        <input type="text" placeholder="MM">
+      </div>
       
-      <label for="">Year</label>
-      <input type="text">
+      <div class="year">
+        <label for="">YEAR</label>
+        <input type="text" placeholder="YYYY">
+      </div>
     </div>
     <div class="middle">
       <button>
@@ -28,9 +36,9 @@
       </button>
     </div>
     <div class="bottom">
-      <span data-years>38</span><p> years</p>
-      <span data-months>3</span><p> months</p>
-      <span data-days>26</span><p> days</p>
+      <div><span data-years>--</span><p> years</p></div>
+      <div><span data-months>--</span><p> months</p></div>
+      <div><span data-days>--</span><p> days</p></div>
     </div>
   </div>
   
