@@ -17,17 +17,7 @@ body {
     padding: 40px 10px;
 }
 
-button {
-    border: none;
-    background: hsl(0, 0%, 100%);
-    margin: 30px auto;
-}
-img {
-    background: hsl(259, 100%, 65%);
-}
-img:hover {
-    background: hsl(0, 0%, 8%);
-}
+/*top div*/
 .top {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -40,6 +30,23 @@ input {
     max-width: 75px;
     height: 45px;
 }
+
+/*middle div*/
+.middle {
+    margin: 30px auto;
+}
+button {
+    border: none;
+    background: hsl(0, 0%, 100%);
+}
+img {
+    background: hsl(259, 100%, 65%);
+}
+img:hover {
+    background: hsl(0, 0%, 8%);
+}
+
+/*bottom div*/
 .bottom {
     font-size: 32px;
 }
