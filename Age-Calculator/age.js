@@ -7,6 +7,13 @@ const year = document.getElementById("year");
 
 //lables
 const dayLabel = document.querySelector(".day label");
+const monthLabel = document.querySelector(".month label");
+const yearLabel = document.querySelector(".year label");
+
+//error messages
+const errorDay = document.querySelector(".day p");
+const errorMonth = document.querySelector(".month p");
+const errorYear = document.querySelector(".year p");
 
 const button = document.querySelector("button");
 
@@ -15,9 +22,13 @@ function calculate() {
     if(day.value.trim() == "") {
         day.classList.add('invalidInput');
         dayLabel.classList.add('error');
+        errorDay.classList.remove('hidden');
+    } else if(day.value < 1 || day.value > 31) {
+        
     } else {
         day.classList.remove('invalidInput');
         dayLabel.classList.remove('error');
+        errorDay.classList.add('hidden');
     }
 }
 
