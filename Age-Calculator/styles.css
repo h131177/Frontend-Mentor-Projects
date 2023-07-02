@@ -29,6 +29,7 @@ label {
 input {
     max-width: 75px;
     height: 45px;
+    border-radius: 10px;
 }
 .invalidInput {
     border: red 1px solid;

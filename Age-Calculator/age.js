@@ -15,6 +15,11 @@ const errorDay = document.querySelector(".day p");
 const errorMonth = document.querySelector(".month p");
 const errorYear = document.querySelector(".year p");
 
+//data-spans
+const days = document.querySelector("[data-days]");
+const months = document.querySelector("[data-months]");
+const years = document.querySelector("[data-years]");
+
 const button = document.querySelector("button");
 
 function calculate() {
@@ -24,8 +29,11 @@ function calculate() {
         dayLabel.classList.add('error');
         errorDay.classList.remove('hidden');
     } else if(day.value < 1 || day.value > 31) {
-        
+        errorDay.textContent = "Must be a valid day";
     } else {
+        days.textContent = 26;
+        months.textContent = 3;
+        years.textContent = 38;
         day.classList.remove('invalidInput');
         dayLabel.classList.remove('error');
         errorDay.classList.add('hidden');
