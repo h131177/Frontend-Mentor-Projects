@@ -14,10 +14,10 @@ function calculate() {
     let invalidInput = false;
     if(day.value.trim() == "") {
         day.classList.add('invalidInput');
-        dayLabel.classList.add('red');
+        dayLabel.classList.add('error');
     } else {
         day.classList.remove('invalidInput');
-        dayLabel.classList.remove('red');
+        dayLabel.classList.remove('error');
     }
 }
 

@@ -33,8 +33,14 @@ input {
 .invalidInput {
     border: red 1px solid;
 }
-.red {
+.error {
     color: red;
+}
+.hidden {
+    display: none;
+}
+.top p {
+    font-size: 11px;
 }
 
 /*middle div*/
