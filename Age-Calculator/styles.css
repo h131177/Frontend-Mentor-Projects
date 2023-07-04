@@ -53,13 +53,17 @@ input {
 }
 button {
     border: none;
-    background: hsl(0, 0%, 100%);
+    background: hsl(259, 100%, 65%);
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+}
+button:hover {
+    background: hsl(0, 0%, 8%);
 }
 img {
-    background: hsl(259, 100%, 65%);
-}
-img:hover {
-    background: hsl(0, 0%, 8%);
+    width: 20px;
+    height: 20px;
 }
 
 /*bottom div*/
