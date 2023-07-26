@@ -30,25 +30,25 @@ console.log(dataSpans);
 
 const button = document.querySelector("button");
 
-function calculate(e, i) {
+function calculate(input, i) {
     let invalidInput = false;
     //TODO Rewrite with arrays
-    if(day.value.trim() == "") {
-        day.classList.add('invalidInput');
-        dayLabel.classList.add('error');
-        errorDay.classList.remove('hidden');
-    } else if(validate(e, i)) {
-        errorDay.textContent = "Must be a valid day";
-        day.classList.add('invalidInput');
-        dayLabel.classList.add('error');
-        errorDay.classList.remove('hidden');
+    if(input.value.trim() == "") {
+        input.classList.add('invalidInput');
+        labels[i].classList.add('error');
+        errorMessages[i].classList.remove('hidden');
+    } else if(validate(input, i)) {
+        errorMessages[i].textContent = "Must be a valid day";
+        input.classList.add('invalidInput');
+        labels[i].classList.add('error');
+        errorMessages[i].classList.remove('hidden');
     } else {
         days.textContent = 26;
         months.textContent = 3;
         years.textContent = 38;
-        day.classList.remove('invalidInput');
-        dayLabel.classList.remove('error');
-        errorDay.classList.add('hidden');
+        input.classList.remove('invalidInput');
+        labels[i].classList.remove('error');
+        errorMessages[i].classList.add('hidden');
     }
 }
 
