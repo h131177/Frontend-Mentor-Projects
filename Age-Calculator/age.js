@@ -32,13 +32,21 @@ const button = document.querySelector("button");
 
 function calculate(input, i) {
     let invalidInput = false;
+    let label;
+    if(i === 0) {
+        label = "day";
+    } else if(i === 1) {
+        label = "month";
+    } else {
+        label = "year";
+    }
     //TODO Rewrite with arrays
     if(input.value.trim() == "") {
         input.classList.add('invalidInput');
         labels[i].classList.add('error');
         errorMessages[i].classList.remove('hidden');
     } else if(validate(input, i)) {
-        errorMessages[i].textContent = "Must be a valid day";
+        errorMessages[i].textContent = "Must be a valid " + label;
         input.classList.add('invalidInput');
         labels[i].classList.add('error');
         errorMessages[i].classList.remove('hidden');
