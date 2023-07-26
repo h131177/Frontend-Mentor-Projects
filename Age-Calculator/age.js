@@ -37,7 +37,7 @@ function calculate(e, i) {
         day.classList.add('invalidInput');
         dayLabel.classList.add('error');
         errorDay.classList.remove('hidden');
-    } else if(day.value < 1 || day.value > 31) {
+    } else if(validate(e, i)) {
         errorDay.textContent = "Must be a valid day";
         day.classList.add('invalidInput');
         dayLabel.classList.add('error');
@@ -50,6 +50,22 @@ function calculate(e, i) {
         dayLabel.classList.remove('error');
         errorDay.classList.add('hidden');
     }
+}
+
+function validate(input, i) {
+    let notValid = false;
+    let upper;
+    if(i === 0) {
+        upper = 31;
+    } else if(i === 1) {
+        upper = 12;
+    } else {
+        upper = new Date().getFullYear();
+    }
+    if(input.value < 1 || input.value > upper) {
+        notValid = true;
+    }
+    return notValid;
 }
 
 function start() {
