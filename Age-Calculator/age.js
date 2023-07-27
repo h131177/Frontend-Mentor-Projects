@@ -26,6 +26,7 @@ const button = document.querySelector("button");
 
 function calculate(input, i) {
     let label;
+    let invalidInput = false;
     if(i === 0) {
         label = "day";
     } else if(i === 1) {
@@ -38,16 +39,20 @@ function calculate(input, i) {
         input.classList.add('invalidInput');
         labels[i].classList.add('error');
         errorMessages[i].classList.remove('hidden');
+        invalidInput = true;
     } else if(validate(input, i)) {
         errorMessages[i].textContent = "Must be a valid " + label;
         input.classList.add('invalidInput');
         labels[i].classList.add('error');
         errorMessages[i].classList.remove('hidden');
+        invalidInput = true;
     } else {
         input.classList.remove('invalidInput');
         labels[i].classList.remove('error');
         errorMessages[i].classList.add('hidden');
+        console.log("HEI " + invalidInput);
     }
+    return invalidInput;
 }
 
 function validate(input, i) {
@@ -67,30 +72,40 @@ function validate(input, i) {
 }
 
 function start() {
+    let invalidInput = false;
+    let temp = false;
     for(let i=0; i < inputs.length; i++) {
-        calculate(inputs[i], i);
-    }
-
-    const time = new Date() - new Date(inputs[2].value, inputs[1].value - 1, inputs[0].value);
-    console.log(time);
-    let totalDays = Math.floor( time / (1000 * 60 * 60 * 24)); 
-    console.log(totalDays);
-    let y = 0, m = 0, d = 0;
-    while(totalDays > 0) {
-        if(totalDays >= 365) {
-            y++;
-            totalDays -= 365;
-        } else if(totalDays >= 30) {
-            m++;
-            totalDays -= 30;
+        if(invalidInput) {
+            temp = calculate(inputs[i], i);
         } else {
-            d++;
-            totalDays--;
+            temp = calculate(inputs[i], i);
+            invalidInput = temp;
         }
+        console.log("i: " + i + " " + invalidInput);
     }
-    days.textContent = d;
-    months.textContent = m;
-    years.textContent = y;
+    console.log(invalidInput);
+    if(!invalidInput) {
+        const time = new Date() - new Date(inputs[2].value, inputs[1].value - 1, inputs[0].value);
+        console.log(time);
+        let totalDays = Math.floor( time / (1000 * 60 * 60 * 24)); 
+        console.log(totalDays);
+        let y = 0, m = 0, d = 0;
+        while(totalDays > 0) {
+            if(totalDays >= 365) {
+                y++;
+                totalDays -= 365;
+            } else if(totalDays >= 30) {
+                m++;
+                totalDays -= 30;
+            } else {
+                d++;
+                totalDays--;
+            }
+        }
+        days.textContent = d;
+        months.textContent = m;
+        years.textContent = y;
+    }
 }
 
 button.addEventListener('click', start);
