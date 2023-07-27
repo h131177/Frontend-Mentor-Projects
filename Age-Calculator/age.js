@@ -50,7 +50,6 @@ function calculate(input, i) {
         input.classList.remove('invalidInput');
         labels[i].classList.remove('error');
         errorMessages[i].classList.add('hidden');
-        console.log("HEI " + invalidInput);
     }
     return invalidInput;
 }
@@ -81,12 +80,10 @@ function start() {
             temp = calculate(inputs[i], i);
             invalidInput = temp;
         }
-        console.log("i: " + i + " " + invalidInput);
     }
-    console.log(invalidInput);
+    
     if(!invalidInput) {
         const time = new Date() - new Date(inputs[2].value, inputs[1].value - 1, inputs[0].value);
-        console.log(time);
         let totalDays = Math.floor( time / (1000 * 60 * 60 * 24)); 
         console.log(totalDays);
         let y = 0, m = 0, d = 0;
