@@ -44,9 +44,6 @@ function calculate(input, i) {
         labels[i].classList.add('error');
         errorMessages[i].classList.remove('hidden');
     } else {
-        days.textContent = 26;
-        months.textContent = 3;
-        years.textContent = 38;
         input.classList.remove('invalidInput');
         labels[i].classList.remove('error');
         errorMessages[i].classList.add('hidden');
@@ -73,6 +70,27 @@ function start() {
     for(let i=0; i < inputs.length; i++) {
         calculate(inputs[i], i);
     }
+
+    const time = new Date() - new Date(inputs[2].value, inputs[1].value - 1, inputs[0].value);
+    console.log(new Date());
+    let totalDays = Math.floor( time / 1000); 
+    console.log(totalDays);
+    let y = 0, m = 0, d = 0;
+    while(totalDays > 0) {
+        if(totalDays >= 365) {
+            y++;
+            totalDays -= 365;
+        } else if(totalDays >= 30) {
+            m++;
+            totalDays -= 30;
+        } else {
+            d++;
+            totalDays--;
+        }
+    }
+    days.textContent = d;
+    months.textContent = m;
+    years.textContent = y;
 }
 
 button.addEventListener('click', start);
