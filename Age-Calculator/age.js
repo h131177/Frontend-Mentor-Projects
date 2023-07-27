@@ -72,8 +72,8 @@ function start() {
     }
 
     const time = new Date() - new Date(inputs[2].value, inputs[1].value - 1, inputs[0].value);
-    console.log(new Date());
-    let totalDays = Math.floor( time / 1000); 
+    console.log(time);
+    let totalDays = Math.floor( time / (1000 * 60 * 60 * 24)); 
     console.log(totalDays);
     let y = 0, m = 0, d = 0;
     while(totalDays > 0) {
