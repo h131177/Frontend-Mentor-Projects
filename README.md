@@ -14,5 +14,11 @@ HTML, CSS
 ### Intro component with sign-up form
 HTML, CSS and Javascript
 
-### Advice Generator (In Progress)
+### Tip Calculator
+HTML, CSS, Javascript
+
+### Advice Generator
 HTML, CSS, Javascript and API
+
+### Age Calculator (In Progress)
+HTML, CSS, Javascript
